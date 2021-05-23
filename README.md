@@ -2,14 +2,14 @@
 
 Dictionaries implementation with different data structures (red-black trees and hash tables) from scratch.
 
-![Read presentation](./Assets/Algorithms_Dictionary_Implementations.pdf)
+[Read presentation](./Assets/Algorithms_Dictionary_Implementations.pdf)
 
 ---
 
 
 ## Analysis
 
-![Analysis Notebook](./analysis.ipynb)
+[Analysis Notebook](./analysis.ipynb)
 
 The analyses were conducted from two perspectives: 
  1 Performance evaluation with respect to the size of the hash tables
