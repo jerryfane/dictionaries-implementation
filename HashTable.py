@@ -41,8 +41,31 @@ class HashTable():
             raise Exception("Key not found")
         else:
             raise Exception("Key not found")
-
             
+    
+    def delete(self, key, testing=False):
+        # find the address of the given key, through the _hash function
+        address = self._hash(key)    
+        current_list = self.data[address]
+        
+        # if there is something at this address return saved value
+        if current_list:
+            # Loop over the items saved at address
+            # O(N) worst case with collisions
+            for i in range(len(current_list)):
+                if current_list[i][0] == key:
+                    # delete key-value pair 
+                    # O(a + b)
+                    if not testing:
+                        #self.data[address] = current_list[:i] + current_list[i:]
+                        self.data[address].remove(current_list[i])
+                    return
+            raise Exception("Key not found")
+        else:
+            raise Exception("Key not found") 
+        
+        
+ 
     # iterate over the saved keys on our Hash Table
     # That's a drawback of hashtables, we have to loop over 
     # each space even if it's empty and they are unordered

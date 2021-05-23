@@ -25,9 +25,13 @@ class MapRBTree(RedBlackTree):
     def get(self, value):
         return self.find_node(value).value_value
     
+    def delete(self, value, testing=False):
+        if not testing:
+            self.remove(value)
+    
     def keys(self, root):
         #in-order trasversal
-        if root == None:
+        if root is None:
             return []
 
         left_list = self.keys(root.left)
