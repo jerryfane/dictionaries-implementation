@@ -37,6 +37,9 @@ I tested the *Insert* and *Get* operations, respectively for 10,000 and 1,000 ke
 ![size-get](./Assets/size-get.png)
 
 
+![size-get](./Assets/size-del.png)
+
+
 ### Number of Keys
 
 The number of keys inserted and retrieved is the factor that actually determines the execution time.  By varying the number of keys used, we can verify the differences between Hash Tables and Red Black Trees, and determine which hash function is more performant. 
@@ -47,7 +50,7 @@ For the analysis I kept the size of the hash tables constant at 250, while the n
 
 ![keys-get](./Assets/keys-get.png)
 
-![log](./Assets/comparison-log-rbt-2.png)
+![log](./Assets/comparison-log-rbt.png)
 
 
 
